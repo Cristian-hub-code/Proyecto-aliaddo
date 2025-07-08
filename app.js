@@ -6,7 +6,7 @@ const correosPermitidos = [
 
 const cursosPorGrupo = {
   erp: [
-    { titulo: "Curso 1: Parametrización ejemplo cambio github - Sesión 1", video: "uU85OOa83JI" },
+    { titulo: "Curso 1: Parametrización ejemplo cambio github2 - Sesión 1", video: "uU85OOa83JI" },
     { titulo: "Curso 2: Parametrización inicial - Sesión 2", video: "0toYR619JJk" },
     { titulo: "Curso 3: Parametrización inicial - Sesión 3", video: "7gt43kHfb7g" },
     { titulo: "Curso 4: Documentos electrónicos", video: "9cvVY00SfCA" },
