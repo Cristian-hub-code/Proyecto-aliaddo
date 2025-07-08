@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cursos Aliaddo</title>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="javascrip/app.js"></script>
+<link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+
+<header>
+  <h1>Cursos del Sistema Aliaddo</h1>
+  <p>Aprende. Mejora. Domina Aliaddo</p>
+</header>
+<nav id="nav-menu" style="display: none; display: flex; justify-content: space-between; align-items: center; padding: 10px 30px;">
+  <div>
+    <a onclick="mostrarSeccion('inicio')">Inicio</a>
+    <a onclick="mostrarSeccion('cursos')">Cursos</a>
+  </div>
+
+  <div id="cerrar-superior-dentro" style="display: none;">
+  <button onclick="cerrarSesion()" class="cerrar-superior-btn">Cerrar sesión</button>
+</div>
+
+<div id="cerrar-sesion-superior" class="cerrar-sesion-superior" style="display: none;">
+  <button onclick="cerrarSesion()">cerrar sesion</button>
+</div> 
+
+</nav>
+<div class="container" id="login-section">
+  <div class="carrusel">
+    <img id="imagen-carrusel" src="https://i.postimg.cc/RVs2ZsMV/aliaddo-01.webp" alt="Publicidad Aliaddo" />
+  </div>
+  <div id="login">
+    <h2>Inicia sesión</h2>
+    <input type="email" id="email" placeholder="Correo electrónico" required><br>
+    <button onclick="iniciarSesion()">Ingresar</button>
+    <p id="error" style="color: red;"></p>
+  </div>
+</div>
+
+<div class="container" id="inicio-section">
+  <h2>Bienvenido</h2>
+  <p>Selecciona una opción:</p>
+  <button class="boton-grande" onclick="window.open('https://aliaddo.com/capacitaciones/', '_blank')">Agendar Capacitación</button>
+  <button class="boton-grande" onclick="window.open('https://calendar.app.google/WNboybb9qCvBa2fx6', '_blank')">Agendar habilitacion</button>
+  <button class="boton-grande" onclick="window.open('https://aliaddo.com/centro-ayuda/', '_blank')">Centro de ayuda</button>
+</div>
+
+<div class="container" id="cursos-section">
+  <div id="selector-grupo" style="text-align: center;">
+    <h3 style="margin-bottom: 20px;">Selecciona un grupo de curso:</h3>
+    <button class="boton-grande" onclick="seleccionarGrupo('erp')">ERP</button>
+    <button class="boton-grande" onclick="seleccionarGrupo('nomina')">Nomina</button>
+  </div>
+  <div id="lista-cursos"></div>
+  <div id="boton-cambiar-grupo" style="position:fixed; bottom: 30px; right: 30px; display: none; z-index: 1000;">
+    <button onclick="volverASeleccionarGrupo()" style="padding: 15px 25px; font-size: 16px; background-color: #4b0082; color: white; border: none; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); cursor: pointer;">Cambiar grupo de cursos</button>
+  </div>
+</div>
+
+<div id="cerrar-superior-dentro" style="display: none;" >
+  <button onclick="cerrarSesion()">Cerrar sesión</button>
+</div>
+
+<footer>
+  <p>&copy; 2025 Cursos Aliaddo | Desarrollado por Aliaddo</p>
+</footer>
+</body>
+</html>
+
