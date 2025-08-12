@@ -118,3 +118,176 @@
       border-left: 6px solid #888;
       opacity: 0.7;
     }
+    #btn-cerrar-sesion {
+  padding: 10px 20px;
+  background-color: #ff1744;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#btn-cerrar-sesion:hover {
+  background-color: #d50000;
+}
+
+#cerrar-sesion-flotante {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+}
+
+#cerrar-sesion-flotante button {
+  background-color: #4b0082;
+  color: white;
+  padding: 15px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.cerrar-superior {
+  position: absolute;
+  top: 120px;
+  right: 40px;
+  z-index: 1000;
+}
+
+.cerrar-superior button {
+  background-color: #4b0082;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cerrar-superior button:hover {
+  background-color: #37005a;
+}
+
+#cerrar-superior-dentro {
+  position: relative;
+  text-align: right;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+#cerrar-superior-dentro button {
+  background-color: #4b0082;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#cerrar-superior-dentro button:hover {
+  background-color: #37005a;
+}
+
+/* ===== Estilo para cada tarjeta de artículo ===== */
+
+.articulo {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover visual para tarjetas */
+
+.articulo:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Estilo del título desplegable ===== */
+
+.articulo h3{
+  margin: 0;
+  font-size: 20px;
+  color: #4b0082;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Contenido del artículo */
+
+.articulo div {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+/* ===== Botón de volver a selección tipo de artículo ===== */
+
+#boton-volver-articulos {
+  background-color: #4b0082;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 15px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
+  transition: background-color 0.2 ease-in-out;
+}
+#boton-volver-articulos:hover {
+  background-color: #360061;                       /* Un poco más oscuro al pasar el mouse */
+}
+
+/* ===== Estilo para inputs y select del formulario ===== */
+
+input[type="number"], select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Botón de calcular */
+
+button {
+  background-color: #4b0082;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+button:hover {
+  background-color: #360061;
+}
+
+/* Resultado de cálculo */
+
+#resultado-horas-extras {
+  background-color: #e0e0ff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+#inicio-section, #cursos-section, #articulos-section {
+  display: none;
+}
